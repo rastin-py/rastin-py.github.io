@@ -1267,10 +1267,18 @@ section,
   color: var(--accent-color);
 }
 
+.dynamic-video {
+  max-width: 100%;   /* never exceed container */
+  height: 400px;      /* keep aspect ratio */
+  display: block;    /* remove inline spacing */
+  margin: 0 auto;    /* center it */
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
 }
+
 

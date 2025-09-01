@@ -55,8 +55,8 @@
             <li class="dropdown"><a href="#download"><i class="bi bi-download navicon"></i> Download <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                    <li><a href="assets/files/academic_cv.pdf" download>Academic CV</a></li>
-                    <li><a href="assets/files/transcriptions.pdf" download>Transcriptions</a></li>
+                    <li><a href="files/CV_Rastin_Maleki.pdf" download>Academic CV</a></li>
+                    <li><a href="files/transcriptions.pdf" download>Transcriptions</a></li>
                 </ul>
             </li>
             <li><a href="#contact"><i class="bi bi-chat navicon"></i> Contact</a></li>
@@ -588,32 +588,27 @@
     </section>
 
 
-    <section id="showcase" class="showcase section">
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Showcase</h2>
-            <p class="section-subtitle">Presentation and demo videos of my projects and applications.</p>
+    <div class="container text-center" data-aos="fade-up">
+        <video id="showcasePlayer" class="dynamic-video" controls>
+            <source src="videos/elva.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <h5 id="videoCaption" class="mb-3">ELVA-Embedded Language Model and Virtual Assistant</h5>
+
+        <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-primary" onclick="prevVideo()">Previous</button>
+            <button class="btn btn-primary" onclick="nextVideo()">Next</button>
         </div>
-        <div class="container text-center" data-aos="fade-up">
-            <div class="showcase-video mb-3">
-                <video id="showcasePlayer" width="80%" controls>
-                    <source src="videos/evla.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <h5 id="videoCaption" class="mb-3">ELVA-Embedded Language Model and Virtual Assistant</h5>
-            <div class="d-flex justify-content-center gap-3">
-                <button class="btn btn-primary" onclick="prevVideo()">Previous</button>
-                <button class="btn btn-primary" onclick="nextVideo()">Next</button>
-            </div>
-        </div>
-    </section>
+    </div>
+
 
     <script>
         const videos = [
-            {src: "videos/evla.mp4", caption: "ELVA-Embedded Language Model and Virtual Assistant"},
+            {src: "videos/elva.mp4", caption: "ELVA-Embedded Language Model and Virtual Assistant"},
             {src: "video1.mp4", caption: "Site Traffic Prediction Project Presentation"},
             {src: "video2.mp4", caption: "Labeling Dashboard"},
-            {src: "video3mp4", caption: "Motion Amplification Demo"}
+            {src: "video3.mp4", caption: "Motion Amplification Demo"}
         ];
 
         let currentIndex = 0;
